@@ -1,0 +1,90 @@
+---
+title: "PowerDataR"
+author: "Elena Bravo"
+date: "1/28/2024"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# *Ejercicio 1: Variables y Tipos de Datos*
+
+# Enunciado: Define una variable llamada numero con el valor 10 y otra llamada nombre con tu nombre.
+
+```{r}
+número <- 10
+nombre <- 'Elena'
+```
+
+#Ejercicio 2: Funciones class e is.numeric Enunciado: Utiliza las funciones class e is.numeric para determinar el tipo de dato de numero.
+
+```{r}
+class(número)
+class(nombre)
+
+is.numeric(número)
+is.numeric(nombre)
+```
+
+
+#Ejercicio 3: Operaciones Aritméticas Enunciado: Realiza una operación aritmética que sume numero y el doble de numero. 
+
+```{r}
+sum(número) + 2* número
+```
+
+
+#Ejercicio 4: Vectores y Listas Enunciado: Crea un vector llamado edades con las edades de tres personas y una lista llamada informacion con el nombre y la edad de una persona.
+
+```{r}
+Edades <- c(17, 20, 25)
+Información <- list(nombre = 'Elena', edad = 25)
+```
+
+#Ejercicio 5: Funciones is.character e is.logical Enunciado: Verifica si nombre es de tipo caracter y si es_numerico es de tipo lógico. 
+
+```{r}
+is.character(nombre)
+is.logical(número)
+```
+
+#Ejercicio 6: Operaciones Lógicas Enunciado: Crea una variable llamada mayor_de_edad que sea TRUE si la edad de la primera persona en edades es mayor o igual a 18. 
+
+```{r}
+mayor_de_edad <- Edades >- 18
+```
+
+
+#Ejercicio 7: Comparaciones de Vectores Enunciado: Utiliza el operador %in% para verificar si el valor 30 está presente en el vector edades. 
+
+```{r}
+30 %in% Edades
+```
+
+#Ejercicio 8: Operadores de Comparación Enunciado: Compara si el doble de numero es mayor que edades[3]. 
+
+```{r}
+2*número > Edades
+```
+
+
+#Ejercicio 9: Utilizar Operador Lógico. Enunciado: Define dos variables lógicas, condicion1 y condicion2, ambas con valor TRUE. Comprueba si ambas condiciones son verdaderas. 
+
+```{r}
+condicion1 <- TRUE
+condicion2 <- TRUE
+
+condicion1 & condicion2
+
+```
+
+
+#Ejercicio 10: Utilizar Operador Lógico Enunciado: Define una variable lógica, verdadero, con valor TRUE. Comprueba que su valor NO sea verdadero.
+
+```{r}
+verdadero <- TRUE
+!verdadero
+```
+
